@@ -1,5 +1,5 @@
-# My Next.js Project
-
+# OTA-Minimi Dashboard
+Coding Challenge: Data Discovery Dashboard
 This is a Next.js project template. It provides a simple starting point for building React applications using the Next.js framework.
 
 ## Table of Contents
