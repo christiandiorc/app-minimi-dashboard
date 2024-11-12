@@ -1,0 +1,87 @@
+/* General styles for .metricsContainer and .metricComponent */
+.metricsContainer {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping if necessary */
+}
+
+.metricComponent {
+  flex: 1;
+  padding: 8px 16px;
+  background-color: #EFF2F3;
+  margin-right: 4px;
+}
+
+.metricIcon {
+  font-size: 24px;
+}
+
+/* Media Queries */
+
+/* Extra Small (Mobile Devices) - Screen size: 0px - 599px */
+@media (max-width: 599px) {
+  .metricsContainer {
+    flex-direction: column;  /* Stack components vertically */
+    width: 100%;  /* Full width */
+  }
+
+  .metricComponent {
+    width: 100%;  /* Full width for each metric component */
+    margin-bottom: 4px;  /* Margin between items */
+  }
+
+  .metricIcon {
+    font-size: 18px;  /* Smaller icon for mobile */
+  }
+}
+
+/* Small (Mobile Portrait) - Screen size: 600px - 767px */
+@media (min-width: 600px) and (max-width: 767px) {
+  .metricsContainer {
+    flex-direction: column;  /* Stack components vertically */
+    width: 100%;
+  }
+
+  .metricComponent {
+    width: 100%;
+    margin-bottom: 4px;
+  }
+
+  .metricIcon {
+    font-size: 20px;  /* Slightly larger icon for portrait */
+  }
+}
+
+/* Medium (Tablets / Large Phones) - Screen size: 768px - 1023px */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .metricsContainer {
+    flex-direction: row;  /* Return to row layout */
+    justify-content: flex-start;  /* Space out the items */
+    flex-wrap: wrap;  /* Allow wrapping */
+  }
+
+  .metricComponent {
+    flex: 0 1 48%;  /* Take up about 50% of the width for two items per row */
+    margin-bottom: 4px;  /* Space between rows */
+  }
+
+  .metricIcon {
+    font-size: 22px;  /* Adjust icon size for tablet */
+  }
+}
+
+/* Large (Laptops / Small Desktops) - Screen size: 1024px - 1279px */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .metricsContainer {
+    flex-direction: row;  /* Keep the row layout */
+    justify-content: flex-start;  /* Space out the items */
+  }
+
+  .metricComponent {
+    flex: 0 1 22%;  /* Four items per row, each taking up about 25% width */
+    margin-bottom: 4px;
+  }
+
+  .metricIcon {
+    font-size: 24px;  /* Larger icon for desktop */
+  }
+}

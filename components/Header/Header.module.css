@@ -1,0 +1,221 @@
+/* Default styles for larger screens */
+.headerStyle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 80px; /* Default larger padding */
+  background-color: #f8f9fa;
+  margin-bottom: 24px;
+  position: sticky;
+  top: 0;
+}
+
+.logoContainerStyle {
+  display: flex;
+  align-items: flex-end;
+}
+
+.rightContainerStyle {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.dashboardTextStyle {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-right: 10px;
+}
+
+.pipeSeparatorStyle {
+  font-size: 20px;
+  color: #333;
+  margin-right: 10px;
+}
+
+.userContainerStyle {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.userIconStyle {
+  font-size: 30px;
+  color: #333;
+  margin-right: 8px;
+}
+
+.userNameStyle {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Mobile-specific styles for extra small devices (max-width: 599px) */
+@media (max-width: 599px) {
+  /* Increase vertical padding for smaller screens */
+  .headerStyle {
+    padding: 20px 16px; /* Increase top/bottom padding */
+  }
+
+  /* Make text and icons bigger for better readability */
+  .dashboardTextStyle {
+    font-size: 22px; /* Larger font size for better visibility */
+  }
+
+  .pipeSeparatorStyle {
+    font-size: 24px; /* Larger separator for balance */
+  }
+
+  .userIconStyle {
+    font-size: 36px; /* Larger user icon for better visibility */
+  }
+
+  .userNameStyle {
+    font-size: 18px; /* Larger user name font */
+  }
+
+  /* Keep logo and user info aligned vertically on small devices */
+  .logoContainerStyle {
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .rightContainerStyle {
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  .userContainerStyle {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  /* Make user name disappear on smaller screens */
+  .userNameStyle {
+    display: none;
+  }
+}
+
+/* Small tablets and larger phones (600px - 767px) */
+@media (min-width: 600px) and (max-width: 767px) {
+  /* Increase vertical padding slightly */
+  .headerStyle {
+    padding: 18px 24px; /* More padding for medium screens */
+  }
+
+  /* Increase text and icon size for better visibility */
+  .dashboardTextStyle {
+    font-size: 20px;
+  }
+
+  .pipeSeparatorStyle {
+    font-size: 22px;
+  }
+
+  .userIconStyle {
+    font-size: 32px; /* Slightly larger icon for readability */
+  }
+
+  .userNameStyle {
+    font-size: 16px;
+  }
+
+  .logoContainerStyle {
+    align-items: center;
+    margin-bottom: 8px;
+  }
+
+  .rightContainerStyle {
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  .userContainerStyle {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+
+/* Medium tablets and laptops (768px - 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Further increase header padding */
+  .headerStyle {
+    padding: 20px 48px;
+  }
+
+  /* Increase text size a bit more for readability */
+  .dashboardTextStyle {
+    font-size: 22px;
+  }
+
+  .pipeSeparatorStyle {
+    font-size: 24px;
+  }
+
+  .userIconStyle {
+    font-size: 36px;
+  }
+
+  .userNameStyle {
+    font-size: 18px;
+  }
+
+  .logoContainerStyle {
+    align-items: center;
+    margin-bottom: 12px;
+  }
+
+  .rightContainerStyle {
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  .userContainerStyle {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+
+/* Large screens (desktops, laptops 1024px and above) */
+@media (min-width: 1024px) {
+  .headerStyle {
+    padding: 20px 80px;
+  }
+
+  .dashboardTextStyle {
+    font-size: 24px;
+  }
+
+  .pipeSeparatorStyle {
+    font-size: 26px;
+  }
+
+  .userIconStyle {
+    font-size: 40px;
+  }
+
+  .userNameStyle {
+    font-size: 20px;
+  }
+
+  .logoContainerStyle {
+    align-items: center;
+  }
+
+  .rightContainerStyle {
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  .userContainerStyle {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
