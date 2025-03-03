@@ -6,7 +6,6 @@ This is a Next.js project template. It provides a simple starting point for buil
 
 - [Installation Guide](#installation-guide)
 - [About the Application](#about-the-application)
-- [Task Breakdown](#task-breakdown)
 
 ## Installation Guide
 
@@ -64,43 +63,6 @@ Below is a list of the **Additional Features** that were incorporated to enrich 
     - Column Filter
     - Checkbox Row Selection
     - Pagination
-
-## Task Breakdown
-
-Below is a breakdown of the tasks outlined in the instructions document.
-
-- <span style="color: green;">✅</span> **1. API Integration:**
-
-  - APIs Created/Implemented (route: /api/companies)
-    - **_GET_**: Returns all company records from `MOCK_DATA.json` file
-    - **_DELETE_**: Removes all selected (Ids) from the `MOCK_DATA.json` file
-
-- <span style="color: green;">✅</span> **2. Display Company List:**
-
-  - Implemented _AG-Grid_ for the data table component. Upon initial render, only the Checkbox and Company Name columns are visible. To reveal additional hidden columns, click the `View Hidden Columns` button. You can toggle the visibility of these columns by clicking the button repeatedly to show or hide them.
-
-- <span style="color: green;">✅</span> **3. Pagination/Infinite Scroll:**
-
-  - Utilized Ag-Grid's out-of-the-box pagination feature in the data table component.
-
-- <span style="color: green;">✅</span> **4. Delete Data Request Button:**
-
-  - Delete button with API call, validation and feedback message (toast).
-
-- <span style="color: green;">✅</span> **5. State Management:**
-
-  - State management is applied everywhere in the application.
-
-Additional Requirements
-
-- <span style="color: green;">✅</span> **1. Use of Typescript**
-- <span style="color: green;">✅</span> **2. Performance Optimization**
-  - **_Loader_** Component used to indicate a loading state for the Datatable component.
-  - **_Skeleton_** Component used to indicate a loading state for the mutable texts.
-  - **_Memoization_** Use of `useMemo` and `useCallback` react hooks to memoized callback functions for more optimized user experience (Prevents unncessary heavy calculations on each rendering)
-- <span style="color: orange;">😐</span> **2. Responsive Design**
-  - **Average**
-  - Basic responsiveness has been implemented, though it could be further refined for a better user experience.
 
 Bonus Points
 
