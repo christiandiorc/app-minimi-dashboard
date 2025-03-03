@@ -75,5 +75,3 @@ Bonus Points
 
   - **_Loader_** Component used to indicate a loading state for the Datatable component.
   - **_Skeleton_** Component used to indicate a loading state for the mutable texts.
-
-- <span style="color: green;">❌</span> **3. Implement tests (unit tests or integration tests) using Jest or React Testing Library.**
